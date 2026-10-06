@@ -1,5 +1,3 @@
-package kadai011;
-
 public class Hello {
     static final String NAME = "Paulo Castro";
     static final String STUDENT_NUMBER = "25122026";

@@ -15,12 +15,6 @@ Java notes:
     Multiple inheritance: implements keyword
     default method: interface fallback for a virtual function
 
-* synchronized
-    std::mutex
-
-* transient: skip a field from serialization (password)
-* native: code in native (c/c++) via JNI
-
 Packages:
     package com.example.game    lives inside    com/example/game/
     classes in the same package (folder) can see private from other classes
