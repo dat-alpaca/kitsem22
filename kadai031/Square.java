@@ -1,0 +1,17 @@
+public class Square extends Shape {
+    private int side;
+
+    public int getSide() {
+        return this.side;
+    }
+
+    public void setSide(int l) {
+        this.side = l;
+    }
+
+    @Override
+    public float calcArea() {
+        float s = getSide();
+        return s * s;
+    }
+}

@@ -1,9 +1,11 @@
 public class FactorialTest {
-    private static final int FACTORIAL_COUNT = 10;
-
     public static void main(String[] args) {
-        Factorial[] factorialList = new Factorial[FACTORIAL_COUNT];
-
+        int      [] example = new int[10];
+        example[0] = 1;
+        example[2] = 1;
+        example[3] = 1;
+        
+        Factorial[] factorialList = new Factorial[10];
         for (int i = 0; i < factorialList.length; i++) {
             factorialList[i] = new Factorial();
             var factorial = factorialList[i];

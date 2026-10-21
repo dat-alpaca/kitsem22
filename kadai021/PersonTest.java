@@ -1,6 +1,7 @@
 public class PersonTest {
     public static void main(String[] args) {
         Person person = new Person();
+
         person.setFirstName("Paulo Vinícius");
         person.setLastName("Castro Galvão");
         person.setAddress("松ヶ崎学生館");
