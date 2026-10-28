@@ -17,7 +17,6 @@ public class Bird {
     public static int getNum() { return Bird.numBird; }
 
     public static void main(String[] args) {
-
         var _ = new Bird();
         var _ = new Chicken();
         var _ = new Chicken();

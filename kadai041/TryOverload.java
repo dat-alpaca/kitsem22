@@ -3,13 +3,17 @@ public class TryOverload {
     private String valString;
     private double valDouble;
 
-    public int getValInt()       { return this.valInt; }
-    public String getValString() { return this.valString; }
-    public double getValDouble() { return this.valDouble; }
+    public int getValInt()       { return valInt; }
+    public String getValString() { return valString; }
+    public double getValDouble() { return valDouble; }
 
-    public void setValue(int number)    { this.valInt = number; }
-    public void setValue(String string) { this.valString = string; }
-    public void setValue(double number) { this.valDouble = number; }
+    public void setValInt(int data)       { valInt    = data; }
+    public void setValString(String data) { valString = data; }
+    public void setValDouble(double data) { valDouble = data; }
+
+    public void setValue(int data)    { valInt    = data; }
+    public void setValue(String data) { valString = data; }
+    public void setValue(double data) { valDouble = data; }
 
     public static int times(int value1, int value2) { return value1 * value2; }
     public static String times(String string, int number)
