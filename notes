@@ -18,3 +18,36 @@ Java notes:
 Packages:
     package com.example.game    lives inside    com/example/game/
     classes in the same package (folder) can see private from other classes
+
+
+Writer:
+    * BufferedWriter
+    * CharArrayWriter
+    * FilterWriter
+    * OutputStreamWriter
+    * PipedWriter
+    * PrintWriter
+    * StringWrite
+
+ public interface ExampleInterface {
+    public void doAction();
+ }
+
+ public class sub implements ExampleInterface {
+     public void doAction() {
+       //specify what must happen
+     }
+ }
+
+ public class SuperClass {
+    public int getNb2() {
+        return 1;
+     }
+ }
+
+ public class SubClass extends SuperClass {
+      @Override
+      public int getNb2() {
+        return 3;
+     }
+ }
