@@ -1,0 +1,9 @@
+Execution Date & Time: Wed Nov  4 16:51:02 2026
+
+Variables:
+AU      =   64 | A       =   64 | BU      =  192 | B       =  -64
+AU      = 0x40 | A       = 0x40 | BU      = 0xc0 | B       = 0xc0
+
+Shifted:
+AU << 1 =  128 | A << 1  = -128 | BU << 1 =  128 | B << 1  = -128
+AU << 1 = 0x80 | A << 1  = 0x80 | BU << 1 = 0x80 | B << 1  = 0x80
