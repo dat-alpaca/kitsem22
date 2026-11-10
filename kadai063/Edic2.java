@@ -7,8 +7,7 @@ import java.util.Map;
 import javax.swing.*;
 
 public class Edic2 extends JFrame {
-
-    private Map<String, String> dictionaryEntries = new HashMap<>();
+    private final Map<String, String> dictionaryEntries = new HashMap<>();
     private JTextField textField;
     private JButton translateButton;
     private JButton clearButton;
@@ -28,6 +27,7 @@ public class Edic2 extends JFrame {
     }
 
     private void setupGUI() {
+        // Elements:
         textField = new JTextField(20);
         
         translateButton = new JButton("Translate");
@@ -74,6 +74,7 @@ public class Edic2 extends JFrame {
         add(buttonPanel);
         add(bottomPanel);
 
+        // Geometry:
         setSize(300, 150);  
         setMinimumSize(new Dimension(300, 150));
     }

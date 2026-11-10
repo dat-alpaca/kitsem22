@@ -10,17 +10,14 @@ public class MyForm extends JFrame {
     private JButton clearButton;
     
     public MyForm() {
-        super("MyForm3");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new FlowLayout());
-
+        super("MyForm");
         setupGUI();
-
-        setSize(300, 150);
-        setVisible(true);
     }
 
     private void setupGUI() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+
         textField = new JTextField(20);
         add(textField);
 
@@ -30,15 +27,17 @@ public class MyForm extends JFrame {
         });
         add(printButton);
 
-
         clearButton = new JButton("Clear");
         clearButton.addActionListener((ActionEvent e) -> {
             textField.setText("");
         });
         add(clearButton);
+
+        setSize(300, 150);
     }
     
     public static void main(String[] args) {
-        new MyForm();
+        var form = new MyForm();
+        form.setVisible(true);
     }
 }

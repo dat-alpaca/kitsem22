@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class Edic extends JFrame {
 
-    private Map<String, String> dictionaryEntries = new HashMap<>();
+    private final Map<String, String> dictionaryEntries = new HashMap<>();
     private JTextField textField;
     private JButton translateButton;
     private JButton clearButton;

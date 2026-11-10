@@ -1,0 +1,3 @@
+My Student ID=25122026 (0x17f54ea)
+uint32_t_min=0,uint32_t_max=4294967295
+int32_t_min=-2147483648,int32_t_max=2147483647
