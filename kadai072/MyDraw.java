@@ -19,29 +19,24 @@ public class MyDraw extends Frame implements MouseListener, ActionListener {
             this.y2 = y2;
         }
 
-        void draw(Graphics g) {
-            g.setColor(color);
+        void draw(Graphics rootGraphics) {
+            Graphics2D graphics = (Graphics2D)rootGraphics.create();
+            graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            
+            graphics.setColor(color);
             switch (shape) {
-                case LINE:
-                    g.drawLine(x1, y1, x2, y2);
-                    break;
-                case RECT:
-                    g.drawRect(Math.min(x1, x2), Math.min(y1, y2),
-                               Math.abs(x2 - x1), Math.abs(y2 - y1));
-                    break;
-                case OVAL:
-                    g.drawOval(Math.min(x1, x2), Math.min(y1, y2),
-                               Math.abs(x2 - x1), Math.abs(y2 - y1));
-                    break;
+                case LINE -> graphics.drawLine(x1, y1, x2, y2);
+                case RECT -> graphics.drawRect(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1));
+                case OVAL -> graphics.drawOval(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1));
             }
         }
     }
 
     private class DrawCanvas extends Canvas {
         @Override
-        public void paint(Graphics g) {
-            for (Figure f : figures)
-                f.draw(g);
+        public void paint(Graphics rootGraphics) {
+            for (Figure figure : figures)
+                figure.draw(rootGraphics);
         }
     }
 
@@ -80,19 +75,17 @@ public class MyDraw extends Frame implements MouseListener, ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
-            case "Line":  currentShape = Shape.LINE;   break;
-            case "Rect":  currentShape = Shape.RECT;   break;
-            case "Oval":  currentShape = Shape.OVAL;   break;
-            case "Black": currentColor = Color.BLACK;  break;
-            case "Red":   currentColor = Color.RED;    break;
-            case "Green": currentColor = Color.GREEN;  break;
-            case "Clear":
+            case "Line" -> currentShape = Shape.LINE;
+            case "Rect" -> currentShape = Shape.RECT;
+            case "Oval" -> currentShape = Shape.OVAL;
+            case "Black" -> currentColor = Color.BLACK;
+            case "Red" -> currentColor = Color.RED;
+            case "Green" -> currentColor = Color.GREEN;
+            case "Clear" -> {
                 figures.clear();
                 canvas.repaint();
-                break;
-            case "Quit":
-                System.exit(0);
-                break;
+            }
+            case "Quit" -> System.exit(0);
         }
     }
 
@@ -104,8 +97,7 @@ public class MyDraw extends Frame implements MouseListener, ActionListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        figures.add(new Figure(currentShape, currentColor,
-                               startX, startY, e.getX(), e.getY()));
+        figures.add(new Figure(currentShape, currentColor, startX, startY, e.getX(), e.getY()));
         canvas.repaint();
     }
 

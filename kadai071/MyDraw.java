@@ -1,6 +1,8 @@
 
 import java.awt.Frame;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowAdapter;
@@ -26,9 +28,14 @@ public class MyDraw extends Frame implements MouseListener {
     }
 
     @Override
-    public void paint(Graphics graphics) {
+    public void paint(Graphics rootGraphics) {
+        Graphics2D graphics = (Graphics2D)rootGraphics.create();
+        graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
         for (int[] line : lines)
             graphics.drawLine(line[0], line[1], line[2], line[3]);
+    
+        graphics.dispose();
     }
 
     @Override
