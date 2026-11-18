@@ -1,0 +1,17 @@
+学生番号と氏名:
+25122026 Castro Galvão Paulo Vinícius (カストロ　ガルバン　パウロ　ヴィニシウス)
+
+改善した方が良い点:
+    I feel like the course focused on practical exercises and included support from TAs; however, some guidance on how to read and utilize official documentation would have further helped in developing self-study skills.
+
+    このコースは実践的な演習に重点が置かれており、TA（ティーチング・アシスタント）によるサポートもありましたが、公式ドキュメントの読み方や活用方法に関するガイダンスがあれば、独学のスキルをさらに養う助けになったのではないかと思います。
+
+良かった点:
+    It was good that many sample codes and examples were provided.
+
+    サンプルコードや例がたくさん提供されていたのは良かったです。
+
+感想:
+    I came from a background in modern C++, so all I had to do was learn the Java syntax, so to me it progressed smoothly, but I felt the example-based structure made it accessible for beginners too.
+
+    Modern C++の経験があったため、Javaの構文を学ぶだけで済み、学習は非常にスムーズに進みました。とはいえ、例題を中心とした構成になっているため、全くの初心者にとっても取り組みやすい内容だと感じました。

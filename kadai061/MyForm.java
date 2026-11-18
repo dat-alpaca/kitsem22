@@ -23,7 +23,7 @@ public class MyForm extends JFrame {
 
         printButton = new JButton("Print");
         printButton.addActionListener((ActionEvent e) -> {
-            System.err.println(textField.getText());
+            System.out.println(textField.getText());
         });
         add(printButton);
 
