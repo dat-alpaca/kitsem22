@@ -1,10 +1,10 @@
 学生番号と氏名:
-25122026 Castro Galvão Paulo Vinícius (カストロ　ガルバン　パウロ　ヴィニシウス)
+25122026 Castro Galvão Paulo Vinícius (カストロ ガルバン パウロ ヴィニシウス)
 
 改善した方が良い点:
     I feel like the course focused on practical exercises and included support from TAs; however, some guidance on how to read and utilize official documentation would have further helped in developing self-study skills.
 
-    このコースは実践的な演習に重点が置かれており、TA（ティーチング・アシスタント）によるサポートもありましたが、公式ドキュメントの読み方や活用方法に関するガイダンスがあれば、独学のスキルをさらに養う助けになったのではないかと思います。
+    このコースは実践的な演習に重点が置かれており、TAによるサポートもありましたが、公式ドキュメントの読み方や活用方法に関するガイダンスがあれば、独学のスキルをさらに養う助けになったのではないかと思います。
 
 良かった点:
     It was good that many sample codes and examples were provided.
